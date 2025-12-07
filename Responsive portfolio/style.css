@@ -1,0 +1,730 @@
+/*commenting style in css */
+
+/*     for the whole page styling -- using "*"    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* resetting default styles like text-decoration, scroll behavior, font, underline and stuff */
+  text-decoration: none;
+
+  /* transition for smooth scrolling */
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+/* colour variables */
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #ea580c;
+}
+
+html {
+  font-size: 60%;
+
+  /* hiding horizontal scrollbar that is preventing overflow of content to the sides */
+  overflow-x: hidden;
+}
+
+/* PART 1 : styling header */
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* selecting header*/
+.header {
+    position: fixed;
+
+    /* width is 100% so that it can take space as much it needed */
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    /* setting padding 4rem to the top and bottom, and 15% to the left and right */
+    padding: 4rem 15%;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    /* for transparency effect or glass effect */
+    backdrop-filter: blur(10px);
+
+    /* putting all the available space between the elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* setting the head above of all pages therefore setting index to a ery high number*/
+    z-index: 1000;
+}
+
+/* deletes the icon while the site is viewed on smaller screens */
+#menu-icon {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
+}
+
+ /* for my name on left upper corner MANISHA NAGAR*/
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+
+    /* making it clickable*/
+    cursor: pointer;
+
+    /* on clicking it will take you back to the home section,....using ease-in-out for smooth transition */
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    /* making little bit bigger */
+    transform: scale(1.1);
+}
+
+/* gradient efect for span element that is for "NAGAR" */
+span{
+    background: linear-gradient(
+    /* take 3 elements */
+
+    /* gives colour from right to left like a background*/
+    270deg,
+    #DF8908 10%,
+    #ff1d15 100%
+    );
+    
+    /* setting the text to background clip */
+    background-clip: text;
+
+    /* and setting the colour of the text to transparent so that the colour of linear gradient can be seen on the word*/
+    color: transparent;
+}
+
+/* selecting anchor tag for styling i.e., for HOME, ABOUT, SERVICES, PROJECTS, CONTACT */
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 4rem;
+    font-weight: 500;
+
+    /*UPDATE*/
+    /* making some space between the links .5 on top and bottom of words and 1.5 on left and right side of the words */
+    padding: 0.5rem 1.5rem;
+
+    /* for hover effect */
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+/* when you hover it let's make the text orange color */
+.navbar a:hover {
+    color: var(--main-color);
+
+    /* underline effect with orange color as well when you hover over it*/
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* styling the buttons "CONTACT ME"*/
+.gradient-btn{
+    font-size: 1.5rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #DF8908 10%,
+        #ff1d15 100%
+    );
+    /*space between letters */
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    /* text colour white */
+    color: white;
+    border: none;
+
+    /* so that the text does not wrap to the next line */
+    text-wrap: nowrap;
+}
+
+/* and when you are going to hover it you are going to make it a bit bigger*/
+.gradient-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* PART 1 : HEADER -- FINISHED*/
+
+
+
+/* PART 2 : HOME*/
+/* select all the section*/
+section{
+    /*to make the section cover the entire page*/
+    min-height: 100vh;
+
+    padding: 10rem 15%;
+}
+
+/* selecting home section */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+/* selecting home content of home section that is selectin div of home content */
+.home-content{
+    /*making it flex container as well*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+/* selecting h1 of home content */
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    list-style: 1;
+
+    /*UPDATE*/
+    /*text-align: left;*/
+}
+
+/* selecting h3 of home content */
+.home-content h3{
+    margin: 1rem 0;
+    font-size: 3.5rem;
+
+    /*UPDATE*/
+    /*text-align: left;*/
+}
+
+/* selecting paragraph of home content */
+.home-content p{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.8;
+    /*UPDATE*/
+    /*text-align: left;*/
+}
+
+/* selecting home image of home section */
+.home-image img{
+    /* to make it responsive ,....width is in viewport width(vw) units means 32% of the viewport width */
+    width: 30vw;
+
+    /* setting border radius to make the image circular */
+    border-radius: 50%;
+
+    /* adding shadow effect or glowing effect,.... 0 0 means behind the image */
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+/* adding effects on hovering the image */
+.home-image img:hover{ 
+    /* shadow spread will be more */
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+/* styling social media icons in home section */
+.social-icons a{
+    /* making them flex containers so that they do not overflow to sides like into paragraph before or after */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+
+    /*adding orange border*/
+    border: 2px solid var(--main-color);
+
+    /* making it circular */
+    border-radius: 50%;
+
+    /* icons are going to be orange colour*/
+    color: var(--main-color);
+
+    /* spacing around the icons 3rem on top and bottom and 0.5rem on left and right */
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+/* hover effect for social media icons */
+.social-icons a:hover{
+    /* color is going to be white*/
+    color: var(--text-color);
+
+    /* background will be orange */
+    background: var(--main-color);
+
+    /*make the text bigger and make it move to the top by px*/
+    /* making it 1.2 times bigger and moving it 5px to the top */
+    transform: scale(1.2) translateY(-5px);
+
+    /* adding shadow effect or glowing effect,.... 0 0 means behind the image */
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+/*style the buttons in home section "HIRE ME" , "CONTACT" */
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* select all the buttons */
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+
+    /* background colour orange */
+    background-color: var(--main-color);
+
+    /* adding shadow effect or glowing effect,.... 0 0 means behind the image */
+    box-shadow: 0 0 25px var(--main-color);
+
+    /* making it circular */
+    border-radius: 3rem;
+
+    font-size: 1.8rem;
+    color: black;
+
+    /* Transparent border for hover effect */
+    /*UPDATE*/
+    border: 2px solid black;
+    
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+/* hover effect for buttons */
+.btn:hover{
+    /* making it a bit bigger */
+    transform: scale(1.05);
+
+    /* adding more shadow effect or glowing effect,.... 0 0 means behind the image */
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+/* styling for all buttons is over here */
+
+
+/* changing the style of second button that is contact button */
+.btn-group a:nth-of-type(2){
+    /* making background transparent for contact button */
+    background-color: black;
+
+    /* adding orange border */
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--main-color);
+
+    /* making background orange on hover */
+    background-color: var(--main-color);
+
+    /* changing text colour to white on hover */
+    color: black;
+
+}
+
+
+/* PART 2 : HOME -- FINISHED*/
+
+/* PART 3 : ABOUT*/
+/* selecting about section*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+    /*background colour will be second background color now*/
+    background: var(--second-bg-color);
+}
+
+/* selecting about content of about section that is selectin div of about content */
+.about-img img{
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+
+}
+
+/* adding effects on hovering the image */
+.about-img img:hover{ 
+    /* shadow spread will be more */
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+/* selecting h2 of about content */
+.about-content h2{
+    font-size: 7rem;
+    text-align: left;
+}
+
+/* selecting h3 of about content */
+/*UPDATE*/
+.about-content h3{
+    font-size: 3rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+/* selecting paragraph of about content */
+.about-content p{
+    font-size: 1.8rem;
+}
+
+/* adding margin to the button in about section */
+.about-content .btn{
+    margin: 3rem 0;
+}
+
+/*styling scrollbars*/
+::-webkit-scrollbar{
+    /*styling side scrollbar*/
+    width: 15px;
+}
+
+/*styling the moving part of scrollbar*/
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+/*styling the track (means : under the scrollbar) of scrollbar*/
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+/* PART 3 : ABOUT -- FINISHED*/
+
+
+/* PART 4 : SERVICES*/
+/* selecting heading of services section */
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+
+/* selecting services section*/
+.services{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+/* selecting h2 of services section */
+.services h2{
+    color: var(--text-color);
+}
+
+.services-container{
+    display: grid;
+    
+    /* auto fit will automatically fit as many columns as possible depending on the screen size */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* selecting each service box or we can say cards */
+.service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+
+    /* setting height of service box */
+    height: 480px;
+
+    /* making it circular in the corners */
+    border-radius: 3rem;
+
+    /*to make the reader think that it is clickable */
+    cursor: pointer;
+
+    /*for hover effect*/
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+/* hover effect for service box */
+.service-box:hover{
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+/* selecting service info/text inside each service box */
+.service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+/* selecting h3 inside service info */
+.service-info h3{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+/* selecting paragraph inside service info */
+.service-info p{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.8;
+}
+/* selecting icon inside service info */
+.service-info i{
+    font-size: 8rem;
+}
+
+/* PART 4 : SERVICES -- FINISHED*/
+
+
+/* PART 5 : PROJECTS*/
+/* selecting projects section*/
+.projects{
+    background-color: var(--second-bg-color);
+}
+
+/* selecting project box container */
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+/* selecting each project card */
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+
+    /*for image hover effect*/
+    overflow: pointer;
+    cursor: pointer;
+
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transform: scale(1.03);
+}
+
+.project-card img{
+    max-width: 300px;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.project-card h3{
+    font-size: 3rem;
+}
+
+.project-card p{
+    font-size: 1.6rem;
+}
+
+/* PART 5 : PROJECTS -- FINISHED*/
+
+
+/* PART 6 : CONTACT*/
+/* selecting contact section*/
+.contact{
+    background-color: var(--bg-color);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+
+/* selecting contact form */
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.contact form .input-box input, 
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    border: 2px solid var(--main-color);
+    border-radius: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 1.5rem 0;
+
+    /* don't want it to resize */
+    resize: none;
+}
+
+/*PART 6 : CONTACT -- FINISHED*/
+
+
+/* style the footer */
+.footer{
+    padding: 5px 0;
+    background-color: var(--second-bg-color);
+}
+
+.footer .social-icons{
+    text-align: center;
+}
+
+.footer ul{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.footer ul li{
+    /* making the list items inline so they stay side by side */
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer ul li a{
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer .copyright{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    /*color: var(--text-color);*/
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+@media (max-width: 1280px) {
+    /*make the menu icon visible*/
+    #menu-icon {
+        display: block;
+    }
+
+    /* for making drop down navbar */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        width: 50%;
+        padding: 1rem 3rem;
+
+        /*setting transparent black color */
+        background: rgba(0, 0, 0, 0.8);
+
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+
+        display: none;
+    }
+
+    /* styling anchor tags inside navbar for drop down */
+    .navbar a{
+        display: block;
+        margin: 3rem 0;
+        font-size: 2rem;
+        color: var(--text-color);
+    }
+
+    /* when this navbar gets a class of active that is when menu icon is clicked */
+    .navbar.active{
+        display: block;
+    }
+    
+    .gradient-btn{
+        display: none;
+    }
+
+    /* changing flex direction of home section to column-reverse */
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+
+    /* setting home content to center */
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    /* centering h1, h3 and paragraph in home content */
+    .home-img img{
+        width: 56vw;
+    }
+
+    /* changing flex direction of about section to column-reverse */
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    /* centering h2 in about section */
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /* resizing about image --bit more smaller */
+    .about img{
+        width: 52vw;
+    }
+
+    /* changing flex direction of contact form to column */
+    .contact form{
+        flex-direction: column;
+    }
+}
+

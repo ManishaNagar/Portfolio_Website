@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- commenting style in html -->
+
+    <!-- link the stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- for using boxicons ....for more icons visit boxicons.com,.....click on usage then import the css link for font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- Part 1 HEADER --> 
+    <header class="header">
+        <!-- for logo using anchor tag poiniting us to the home page when you click on the logo -->
+        <!-- its to the left ....done by styling -->
+        <a href="#home" class="logo">
+            Manisha <span>Nagar</span>
+        </a>
+        <!-- using span so that we can change the colour for span -->
+        
+        <!-- it will be going to used in javascript for menu icon for resposiveness of website-->
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <!-- navbar with the links to the different sections of the website -->
+         <!-- its to the centre ....done by styling -->
+        <nav class="navbar">
+            <!--adding links to different sections-->
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav> 
+
+        <!-- its to the right ....done by styling -->
+        <button class="gradient-btn">Contact Me
+        </button>
+
+    </header>
+    <!-- completed header though styling is needed-->
+
+
+    <!-- PART 2 : HOME-->
+    <section class="home" id="home">
+
+        <!-- home content and image -->
+        <div class="home-content">
+          <h1>Hello, I'm <span>Manisha Nagar</span></h1>
+          <h3>I'm a <span>Web Developer</span></h3>
+
+          <p>
+
+            Hi! I’m Manisha, a Web Developer who loves building websites that look great and feel smooth to use.
+
+            <br/>
+
+            I enjoy turning simple ideas into polished digital experiences. With every project, I aim to learn something new and grow as a developer.
+
+            <br/> 
+
+            Welcome to my portfolio - have a look around!
+
+          </p>
+
+
+          <!-- Adding social media icons in home section -->
+          <div class="social-icons">
+            
+            <a href="#">
+              <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="bx bxl-gmail"></i>
+            </a>
+
+          </div>
+
+          <!-- Adding buttons for hiring and contact in home section -->
+          <div class="btn-group">
+            <a href="#" class="btn">Hire Me</a>
+            <a href="#contact" 
+            class="btn">Contact</a>
+          </div>
+        </div>
+
+        <div class="home-image">
+          <img src="image.jpeg" alt="home image (my image)" />
+        </div>
+
+    </section>
+
+    <!-- completed home section though styling is needed-->
+
+
+    <!-- PART 3 : ABOUT -->
+    <section class="about" id="about">
+      <!-- content for about section will go here -->
+      <div class="about-img">
+        <img src="image.jpeg" alt="about image" />
+      </div>
+
+      <div class="about-content">
+        <h2 >About <span>Me</span></h2>
+        <h3>Web Developer & Designer</h3>
+
+        <p>
+          I’m Manisha Nagar, a Computer Science Engineering graduate and passionate Web Developer with experience in building responsive, visually appealing, and user-focused websites. I enjoy creating clean interfaces using HTML, CSS, and JavaScript, and I’m always exploring new ways to make the web more beautiful and functional.
+
+          <br/>
+          
+          My journey in tech started with building real-world projects - from designing portfolio websites to developing AI chatbots and IoT-based systems. These projects strengthened my foundation in problem-solving, front-end development, and understanding how design and technology work together to create meaningful digital experiences.
+
+          <br/>
+        
+          I love learning, experimenting, and improving my skills one project at a time. My goal is to grow as a developer and contribute to products that make a positive impact through simplicity, creativity, and great user experience.
+        </p>
+        <a href="#" class="btn">Read More</a>
+
+      </div>
+
+    </section>
+
+    <!-- completed about section though styling is needed-->
+
+
+    <!-- PART 4 : SERVICES -->
+    <section class="services" id="services">
+      <!-- content for services section will go here -->
+
+      <h2 class="heading">Services</h2>
+
+      <!-- adding different cards of services -->
+      <div class="services-container">
+        <!-- service box 1 -->
+        <div class="service-box">
+
+          <div class="service-info">
+            <i class="bx bxl-figma"></i>
+            <h3>Web Design</h3>
+            <p>
+              Creating visually appealing and user-friendly website designs that enhance user experience and engagement.
+            </p>
+          </div>
+        </div>
+
+        <!-- service box 2 -->
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and functional websites using modern web technologies to ensure optimal performance across devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- service box 3 -->
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h3>Responsive Design</h3>
+            <p>
+              Ensuring websites are fully responsive and provide a seamless experience on all screen sizes, from desktops to mobile devices.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- completed services section though styling is needed-->
+
+
+    <!-- PART 5 : PROJECTS -->
+    <section class="projects" id="projects">
+      <!-- content for projects section will go here -->  
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-box">
+        <!-- project box 1 -->
+        <div class="project-card">
+          <img src="project1.png" alt="Portfolio Website" />
+          <h3>Portfolio Website</h3>
+          <p>
+            I designed and developed a fully responsive portfolio website using HTML, CSS, and JavaScript. It highlights my projects, skills, achievements, and contact details with a clean and user-friendly interface. <br/>
+            This project helped me understand UI/UX principles, frontend layout, and responsive design.
+          </p>
+          <a href="https://github.com/yourusername/portfolio-website" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <!-- project box 2 -->
+        <div class="project-card">
+          <img src="project2.png" alt="University Chatbot" />
+          <h3>University Chatbot</h3>
+          <p>
+            I built an AI-powered chatbot that automates university-related queries using Python, Rasa Framework, NLP, and SQL. The chatbot understands student questions in real time and fetches dynamic details like attendance, marks, and holiday updates. This project strengthened my backend logic, database handling, and natural language processing skills.
+          </p>
+          <a href="https://github.com/yourusername/university-chatbot" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <!-- project box 3 -->
+        <div class="project-card">
+          <img src="project3.png" alt="Automatic Plant Watering System" />
+          <h3>Automatic Plant Watering System (IoT)</h3>
+          <p>
+            This was an IoT-driven smart irrigation system using Arduino, moisture sensors, and relay modules. The device automatically waters plants based on soil moisture levels, optimizing water usage and reducing manual effort. It improved my understanding of sensor calibration, embedded systems, and automation.
+          </p>
+          <a href="https://github.com/yourusername/automatic-plant-watering-system" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <!-- project box 4 -->
+        <div class="project-card">
+          <img src="project4.png" alt="Arduino Hand Gesture Control System" />
+          <h3>Arduino Hand Gesture Control System</h3>
+          <p>
+            I created a hand-gesture control interface using Arduino and Python, capable of performing actions like play/pause, next/previous, and volume control. With modifications, it can also control games or other apps. This project helped me learn real-time gesture recognition and hardware-software integration.
+          </p>
+          <a href="https://github.com/yourusername/arduino-hand-gesture-control-system" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <!-- project box 5 -->
+        <div class="project-card">
+          <img src="project5.png" alt="Ultrasonic Cane for Visually Impaired (IoT + Assistive Tech) - Published in IEEE" />
+          <h3>Ultrasonic Cane for Visually Impaired <br/> (IoT + Assistive Tech) <br/> Published in IEEE  </h3>
+          <p>
+            I developed an IoT-based assistive device using ultrasonic sensors, GPS, and GSM to help visually impaired individuals detect obstacles and receive voice-guided distance alerts. This project was published in IEEE and received the Best Author Award, giving me experience in research, innovation, and user-centered hardware design.
+          </p>
+          <a href="https://github.com/yourusername/ultrasonic-cane-for-visually-impaired" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <!-- project box 6 -->
+        <div class="project-card">
+          <img src="project6.png" alt="Ultrasonic Blind Specs (Prototype - IoT + GPS + GSM)" />
+          <h3>Ultrasonic Blind Specs <br/> (Prototype - IoT + GPS + GSM)</h3>
+          <p>
+            As an extension to the cane project, I created smart specs that detect obstacles and describe the surroundings through audio output. I integrated ultrasonic sensors, GPS, and GSM modules and worked on improving accuracy and mapping features. This project helped me understand prototyping, hardware testing, and assistive technology systems. We can also connect it to a mobile app for enhanced navigation features. And this project can be combined with the previous one for better usability.
+          </p>
+          <a href="https://github.com/yourusername/ultrasonic-blind-specs" class="btn" target="_blank">View Project</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- completed projects section though styling is needed-->
+
+
+    <!-- PART 6 : CONTACT -->
+    <section class="contact" id="contact">
+      <!-- content for contact section will go here --> 
+      <h2 class="heading">Contact <span>Me</span></h2>
+      
+      <!-- contact form -->
+      <form id="contactform" action="#">
+        <div class="input-group">
+
+          <div class="input-box">
+            <input type="text" name="fullname" placeholder="Full Name" required />
+
+            <!-- UPDATE email input field for validation -->
+            <input type="email" name="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" title="Please enter a valid Gmail address (example@gmail.com)"/>
+            <!-- UPDATE completed -->
+
+          </div>
+
+          <div class="input-box">
+
+            <!--   <input type="number" placeholder="Phone Number" required />   -->
+            <!-- UPDATE so that number can be checked for 10 digits -->   
+            <input type="text" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Phone Number" required/>
+            <span id="phone-error" style="color:red; display: none;">Phone number must be exactly 10 digits</span>
+            <!-- UPDATE completed -->
+
+            <input name="subject" type="text" placeholder="Subject" required />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+
+          <!-- if there is space between textarea and the next attribute then there will be default spaces and default message that is written in placeholder will not be seen first we have to delete the spaces to rite our message -->
+          <textarea name="message" id="message" placeholder="Your Message" required columns="30" rows="10"></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+
+      </form>
+
+    </section>
+
+    <!-- completed contact section though styling is needed-->
+
+
+    <!-- footer section -->
+    <footer class="footer"> 
+
+      <div class="social-icons">   
+        <a href="#">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-gmail"></i>
+        </a>
+
+      </div>
+      
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Created By Manisha Nagar | © 2024 All rights reserved.
+      </p>
+      
+    </footer> 
+    <!-- completed footer section though styling is needed-->
+
+    <!-- link javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
