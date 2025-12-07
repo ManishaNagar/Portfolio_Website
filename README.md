@@ -39,6 +39,7 @@ Responsive Web Design
 
 4. Projects
 Displayed in the Projects section:
+
 A. Portfolio Website
 I designed and developed a fully responsive portfolio website using HTML, CSS, and JavaScript. It highlights my projects, skills, achievements, and contact details with a clean and user-friendly interface.This project helped me understand UI/UX principles, frontend layout, and responsive design.
 
