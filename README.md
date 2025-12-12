@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
 A modern, clean, and fully responsive personal portfolio website built using **HTML, CSS, and JavaScript**. This portfolio showcases my skills, projects, and contact information in a visually appealing and easy-to-navigate layout.
-Github: https://github.com/ManishaNagar/Portfolio_Website
 
 **Live Demo:** [https://manishanagar.netlify.app](https://manishanagar.netlify.app)
 
@@ -41,6 +40,7 @@ Github: https://github.com/ManishaNagar/Portfolio_Website
 
 **A. Portfolio Website**  
 A fully responsive portfolio website highlighting projects, skills, achievements, and contact details. Strengthened my understanding of UI/UX principles, frontend layout, and responsive design.  
+*GitHub:*  https://github.com/ManishaNagar/Portfolio_Website
 
 **B. University Chatbot (AI + NLP + Rasa Framework)**  
 An AI-powered chatbot using Python, Rasa, NLP, and SQL to answer student queries in real-time. Enhanced skills in NLP, backend logic, Rasa pipelines, and database integration.  
@@ -48,11 +48,11 @@ An AI-powered chatbot using Python, Rasa, NLP, and SQL to answer student queries
 
 **C. Automatic Plant Watering System (IoT)**  
 IoT-based smart irrigation system using Arduino, soil moisture sensors, and relay modules. Automates watering, optimizing water usage and reducing manual effort.  
-*GitHub:*  
+*GitHub:* https://github.com/ManishaNagar/AUTOMATIC-PLANT-WATERING-SYSTEM
 
 **D. Arduino Hand Gesture Control System**  
 Gesture-controlled interface using Arduino + Python for actions like play/pause, next/previous, and volume control. Learned real-time gesture recognition and hardware-software integration.  
-*GitHub:*  
+*GitHub:* https://github.com/ManishaNagar/GESTURE-CONTROL-USING-ARDUINO-AND-PYTHON
 
 **E. Ultrasonic Cane for Visually Impaired (IoT + Assistive Tech) – Published in IEEE**  
 Assistive device using ultrasonic sensors, GPS, and GSM to help visually impaired individuals detect obstacles and receive audio alerts. Published in IEEE and awarded Best Author.  
