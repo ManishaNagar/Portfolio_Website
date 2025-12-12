@@ -56,7 +56,7 @@ Gesture-controlled interface using Arduino + Python for actions like play/pause,
 
 **E. Ultrasonic Cane for Visually Impaired (IoT + Assistive Tech) – Published in IEEE**  
 Assistive device using ultrasonic sensors, GPS, and GSM to help visually impaired individuals detect obstacles and receive audio alerts. Published in IEEE and awarded Best Author.  
-*GitHub:*  
+*GitHub:* https://github.com/ManishaNagar/Ultrasonic-Blind-Stick-GPS-GSM 
 
 **F. Ultrasonic Blind Specs (Prototype – IoT + GPS + GSM)**  
 Smart wearable specs detecting obstacles and providing voice-based navigation. Gained experience in rapid prototyping, IoT systems, and assistive tech.  
