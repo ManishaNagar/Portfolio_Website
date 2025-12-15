@@ -30,11 +30,13 @@ document.querySelectorAll(".navbar a").forEach(link => {
 
 // ================= READ MORE BUTTON =================
 
-function toggleReadMore() {
-  var content = document.getElementById("moreContent");
-  var btn = document.getElementById("readBtn");
+function toggleContent(contentId, btnId) {
+  var content = document.getElementById(contentId);
+  var btn = document.getElementById(btnId);
 
-  if (content.style.display === "none") {
+  if (!content || !btn) return;
+
+  if (content.style.display === "" || content.style.display === "none") {
     content.style.display = "block";
     btn.innerText = "Read Less";
   } else {
@@ -42,6 +44,7 @@ function toggleReadMore() {
     btn.innerText = "Read More";
   }
 }
+
 
 // ================= PHONE NUMBER VALIDATION =================
 document.getElementById("phone").addEventListener("input", function () {
@@ -54,20 +57,5 @@ document.getElementById("phone").addEventListener("input", function () {
         err.style.display = "block";
     }
 });
-
-
-// ================= FAQ READ MORE BUTTON =================
-function toggleReadMore() {
-  var content = document.getElementById("faqContent");
-  var btn = document.getElementById("faq_Btn");
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    btn.innerText = "Read Less";
-  } else {
-    content.style.display = "none";
-    btn.innerText = "Read More";
-  }
-}
 
 //UPDATE completed  
