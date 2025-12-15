@@ -28,6 +28,21 @@ document.querySelectorAll(".navbar a").forEach(link => {
     };
 });
 
+// ================= READ MORE BUTTON =================
+
+function toggleReadMore() {
+  var content = document.getElementById("moreContent");
+  var btn = document.getElementById("readBtn");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    btn.innerText = "Read Less";
+  } else {
+    content.style.display = "none";
+    btn.innerText = "Read More";
+  }
+}
+
 // ================= PHONE NUMBER VALIDATION =================
 document.getElementById("phone").addEventListener("input", function () {
     let phone = this.value;
@@ -41,5 +56,18 @@ document.getElementById("phone").addEventListener("input", function () {
 });
 
 
-//Add DB
+// ================= FAQ READ MORE BUTTON =================
+function toggleReadMore() {
+  var content = document.getElementById("faqContent");
+  var btn = document.getElementById("faq_Btn");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    btn.innerText = "Read Less";
+  } else {
+    content.style.display = "none";
+    btn.innerText = "Read More";
+  }
+}
+
 //UPDATE completed  
