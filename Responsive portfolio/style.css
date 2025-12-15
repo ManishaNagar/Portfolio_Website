@@ -785,6 +785,7 @@ section{
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #555;
 }
 
 .faq-answer {
@@ -795,3 +796,4 @@ section{
 
 
 /* FAQ section styling - Finished */
+
