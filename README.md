@@ -13,7 +13,8 @@ A modern, clean, and fully responsive personal portfolio website built using **H
 - Hover animations & interactive elements  
 - Project showcase section  
 - Simple message/contact section  
-- Built with pure HTML, CSS & JavaScript  
+- Built with pure HTML, CSS & JavaScript
+- database integration 
 
 ---
 
@@ -69,12 +70,22 @@ Assistive device using ultrasonic sensors, GPS, and GSM to help visually impaire
 
 ---
 
+## FAQs Section
+- Added some random questions.
+
+---
+
+## Contact Form Integration
+- The portfolio website features a Contact Me form that stores submissions in Google Sheets using SheetDB, eliminating the need for a backend server. The form captures: Full Name, Email, Phone, Subject, and Message.
+
+---
+
 ## Tech Stack
 - **Frontend:** HTML5, CSS3, JavaScript  
 - **Version Control:** Git, GitHub  
 - **Deployment:** Netlify
 - **IDE:** Visual studio code
-- **Back-end:** Google Sheets
+- **Back-end:** Google Sheets, google sheet db
 
 ---
 
