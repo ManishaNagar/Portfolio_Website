@@ -41,6 +41,7 @@ A modern, clean, and fully responsive personal portfolio website built using **H
 **A. Portfolio Website**  
 A fully responsive portfolio website highlighting projects, skills, achievements, and contact details. Strengthened my understanding of UI/UX principles, frontend layout, and responsive design.  
 *GitHub:*  https://github.com/ManishaNagar/Portfolio_Website
+
 **Netlify Deployment:** [https://manishanagar.netlify.app](https://manishanagar.netlify.app)
 
 **B. University Chatbot (AI + NLP + Rasa Framework + DB)**  
